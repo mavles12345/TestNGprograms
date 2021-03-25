@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="password" value="12345"/>
+    <parameter name="username" value="selvam"/>
+    <classes>
+      <class name="org.practice3.Autorerun">
+        <methods>
+          <include name="tc2" invocation-numbers="0 1 2 3"/>
+          <include name="tc1" invocation-numbers="0"/>
+          <include name="launch"/>
+        </methods>
+      </class> <!-- org.practice3.Autorerun -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

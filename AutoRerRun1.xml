@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener>
+</listener>
+</listeners>
+
+  <test thread-count="5" name="Test">
+  <parameter name="username" value="selvam"></parameter>
+  <parameter name="password" value="12345"></parameter>
+    <classes>
+      <class name="org.practice3.Practice1"/>
+      <class name="org.practice3.Practice2"/>
+      <class name="org.practice3.Autorerun"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
